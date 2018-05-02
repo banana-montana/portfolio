@@ -1,0 +1,318 @@
+/* fonts */
+/* colours */
+/* ---------- site ---------- */
+html {
+  max-width: 100%; }
+
+.container {
+  font-family: "Montserrat", arial, helvetica, sans-serif;
+  max-width: 1250px;
+  margin: 0 auto; }
+
+main {
+  font-family: "Montserrat", arial, helvetica, sans-serif; }
+
+/* ---- footer ---- */
+.footer {
+  background-color: #f1f1f1; }
+  .footer p {
+    text-align: center;
+    margin: 20px 0; }
+
+/*
+.fa {
+  margin: 0 20px;
+  cursor: pointer;
+}*/
+/* ---- nav menu ---- */
+/* pop up overlay  */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  font-family: "Montserrat", arial, helvetica, sans-serif;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: white;
+  overflow-y: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .overlay li, .overlay a {
+    padding: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    font-size: 35px;
+    letter-spacing: 3pt;
+    color: #f2f2f2;
+    display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .overlay li:hover, .overlay li:focus, .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1; }
+
+.mobilenav {
+  color: black;
+  font-family: "Montserrat", arial, helvetica, sans-serif; }
+  .mobilenav p {
+    margin: 0;
+    padding-top: 35px;
+    float: right;
+    font-size: 25px;
+    cursor: pointer; }
+  .mobilenav h3 {
+    float: left;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #0064AC;
+    padding-top: 37px; }
+
+.overlay .closebtn {
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 60px; }
+
+.clearfix {
+  clear: both; }
+
+.overlay-content {
+  position: relative;
+  top: 23%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
+.yellow-menu {
+  height: 100%vh;
+  background-color: #F9B730; }
+
+.contact-menu {
+  text-align: left;
+  background-color: white; }
+
+/* ---- home page ---- */
+.introduction .introtext {
+  padding: 15% 0; }
+
+.workpadding {
+  margin: 3% 0 0 0; }
+
+.projectpadding {
+  margin: 8% 0 0 0; }
+
+/* skills */
+.skill-set {
+  font-family: "Montserrat", arial, helvetica, sans-serif;
+  color: white; }
+  .skill-set img {
+    padding: 12% 0;
+    width: 80%; }
+  .skill-set h3 {
+    padding: 5% 0;
+    font-weight: 500;
+    font-size: 45px; }
+  .skill-set p {
+    font-weight: 300; }
+
+/* colour on skills section */
+.yellow {
+  background-color: #F9B730; }
+  .yellow h3, .yellow p {
+    text-align: right; }
+  .yellow p {
+    padding: 0 0 0 15%; }
+
+.blue {
+  background-color: #0064AC; }
+  .blue img {
+    padding: 0 12% 10% 12%;
+    width: 100%; }
+  .blue p {
+    padding: 0 15% 0 0; }
+
+.red {
+  background-color: #C72A22; }
+  .red h3, .red p {
+    text-align: right; }
+  .red p {
+    padding: 0 0 0 15%; }
+
+/* ----- work page ----- */
+/* colour filter */
+.filter-menu.category-active-print {
+  background: #0064AC; }
+
+.filter-menu.category-active-web {
+  background: #F9B730; }
+
+.filter-menu.category-active-animation {
+  background: #C72A22; }
+
+/* portfolio filter buttons */
+.headerimg img {
+  padding: 0 0;
+  width: 100%; }
+
+.filter-buttons {
+  padding: 1% 0 0 0; }
+
+.skill-introduction {
+  padding: 8% 0; }
+
+.filter-menu {
+  padding: 0 0 7% 0;
+  background-color: #F9B730; }
+  .filter-menu .button {
+    font-family: "Montserrat", arial, helvetica, sans-serif;
+    display: inline-block;
+    margin: 1% 0;
+    padding: 0;
+    color: white;
+    opacity: 0.5;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    text-transform: none;
+    text-decoration: none;
+    white-space: none;
+    border: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .filter-menu .button:focus, .filter-menu .button:active {
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      color: white;
+      opacity: 1; }
+    .filter-menu .button ::after {
+      content: '';
+      display: block;
+      -webkit-transition: width 0.4s;
+      -o-transition: width 0.4s;
+      transition: width 0.4s; }
+
+/* portfolio filter */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.content {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .content img {
+    width: 100%; }
+  .content:hover {
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    /*box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 6px 0 rgba(0, 0, 0, 0.15);*/ }
+
+.overlay-title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+  background-color: white; }
+  .overlay-title:hover {
+    opacity: 0.8; }
+  .overlay-title h3 {
+    font-weight: 500;
+    font-family: "Montserrat", arial, helvetica, sans-serif;
+    text-align: center;
+    padding: 44% 0 0 0;
+    color: black; }
+
+/* project page */
+.filter-menu .arrow {
+  font-size: 20px;
+  color: white; }
+  .filter-menu .arrow button {
+    color: white;
+    opacity: 1; }
+
+.backarrow {
+  padding: 0 2% 0 0; }
+
+.projectview img {
+  width: 100%; }
+
+.projectviewimgs {
+  padding: 0; }
+  .projectviewimgs img {
+    width: 100%; }
+
+.portfolio-entry {
+  padding: 0 0 3% 0; }
+
+/* Hide all elements by default */
+.column.hide {
+  display: none; }
+
+/* The "show" class is added to the filtered elements */
+.column.show {
+  -moz-animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+  -o-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+  display: block; }
+
+/* ---- media queries ---- */
+/* ---- mobile ---- */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .mobilenav p {
+    padding-top: 18px; }
+  .mobilenav h3 {
+    padding-top: 25px;
+    font-size: 22pt; }
+  .overlay-content {
+    top: 10%; }
+  .overlay .closebtn {
+    top: -10px;
+    right: 15px; }
+  /* ---- work page ---- */
+  .filter-menu {
+    margin: 0 0 20px 0; }
+    .filter-menu .button {
+      font-size: 18pt;
+      margin: 8px 23px; }
+  /* ---- override column structure ---- */
+  .center {
+    margin: 0 0 25px 0; }
+    .center i {
+      font-size: 23pt; }
+    .center button {
+      margin: 0 2%;
+      padding: 7px 15px 0 15px;
+      height: 10%; } }
+
+/* ---- phablet ---- */
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+  .portfolio-entry {
+    padding: 0 0 3% 0; } }
+
+/* ---- desktop ---- */
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .portfolio-entry {
+    padding: 0 0 4% 0; } }
+
+/* ---- large desktop ---- */
+@media only screen and (min-width: 1600px) and (max-width: 1980px) {
+  .portfolio-entry {
+    padding: 0 0 4% 0; } }
