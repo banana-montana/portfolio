@@ -34,7 +34,7 @@ main {
   z-index: 1;
   top: 0;
   left: 0;
-  background: white;
+  background: #F9B730;
   overflow-y: hidden;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -132,8 +132,8 @@ main {
 .blue {
   background-color: #0064AC; }
   .blue img {
-    padding: 0 12% 10% 12%;
-    width: 100%; }
+    padding: 0 10% 8% 10%;
+    width: 120%; }
   .blue p {
     padding: 0 15% 0 0; }
 
@@ -152,7 +152,7 @@ main {
 .filter-menu.category-active-web {
   background: #F9B730; }
 
-.filter-menu.category-active-animation {
+.filter-menu.category-active-branding {
   background: #C72A22; }
 
 /* portfolio filter buttons */
@@ -276,6 +276,8 @@ main {
 /* ---- media queries ---- */
 /* ---- mobile ---- */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  .display-m {
+    display: none; }
   .mobilenav p {
     padding-top: 18px; }
   .mobilenav h3 {
@@ -300,19 +302,66 @@ main {
     .center button {
       margin: 0 2%;
       padding: 7px 15px 0 15px;
-      height: 10%; } }
+      height: 10%; }
+  /* skill set */
+  .skill-set img {
+    padding: 10% 10%;
+    width: 100%; }
+  .skill-set h3 {
+    padding: 0;
+    font-size: 30px; }
+  /* colour on skills section */
+  .yellow h3, .yellow p {
+    text-align: center; }
+  .yellow p {
+    padding: 0; }
+  .blue {
+    padding: 0; }
+    .blue img {
+      padding: 0 0 20px 0;
+      width: 100%; }
+    .blue p, .blue h3 {
+      padding: 0;
+      text-align: center; }
+  .red h3, .red p {
+    text-align: center; }
+  .red p {
+    padding: 0; }
+  .mobilenav {
+    color: black;
+    font-family: "Montserrat", arial, helvetica, sans-serif; }
+    .mobilenav p {
+      margin: 0;
+      padding-top: 35px;
+      float: right;
+      font-size: 25px;
+      cursor: pointer; }
+    .mobilenav h3 {
+      float: left;
+      font-size: 22px;
+      letter-spacing: 1px;
+      margin: 0;
+      text-transform: uppercase;
+      color: #0064AC;
+      padding-top: 35px; } }
 
 /* ---- phablet ---- */
 @media only screen and (min-width: 768px) and (max-width: 1365px) {
   .portfolio-entry {
-    padding: 0 0 3% 0; } }
+    padding: 0 0 3% 0; }
+  .display-d {
+    display: none; } }
 
 /* ---- desktop ---- */
 @media only screen and (min-width: 1366px) and (max-width: 1599px) {
   .portfolio-entry {
-    padding: 0 0 4% 0; } }
+    padding: 0 0 4% 0; }
+  .display-d {
+    display: none; } }
 
 /* ---- large desktop ---- */
 @media only screen and (min-width: 1600px) and (max-width: 1980px) {
   .portfolio-entry {
-    padding: 0 0 4% 0; } }
+    padding: 0 0 4% 0; }
+  .display-d {
+    display: none; } }
