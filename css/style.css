@@ -19,11 +19,6 @@ main {
     text-align: center;
     margin: 20px 0; }
 
-/*
-.fa {
-  margin: 0 20px;
-  cursor: pointer;
-}*/
 /* ---- nav menu ---- */
 /* pop up overlay  */
 .overlay {
@@ -34,25 +29,33 @@ main {
   z-index: 1;
   top: 0;
   left: 0;
-  background: #F9B730;
+  background: #0064AC;
+  opacity: 0.95;
   overflow-y: hidden;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   .overlay li, .overlay a {
-    padding: 15px;
     font-weight: 600;
     text-decoration: none;
     list-style: none;
     font-size: 35px;
     letter-spacing: 3pt;
     color: #f2f2f2;
-    display: block;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-    .overlay li:hover, .overlay li:focus, .overlay a:hover, .overlay a:focus {
-      color: #f1f1f1; }
+
+.overlay-links a {
+  padding: 0 0 10px 0;
+  font-size: 65px;
+  display: block; }
+  .overlay-links a:hover {
+    color: #f1f1f1;
+    text-decoration: line-through;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
 
 .mobilenav {
   color: black;
@@ -78,6 +81,18 @@ main {
   top: 15px;
   right: 35px;
   font-size: 60px; }
+  .overlay .closebtn li, .overlay .closebtn a {
+    padding: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    font-size: 35px;
+    letter-spacing: 3pt;
+    color: #f2f2f2;
+    display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .clearfix {
   clear: both; }
@@ -94,8 +109,29 @@ main {
   background-color: #F9B730; }
 
 .contact-menu {
-  text-align: left;
-  background-color: white; }
+  padding: 2% 0 0 0;
+  text-align: center;
+  background: #0064AC;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.socialmedia-icons {
+  display: inline;
+  color: #0BA094;
+  text-align: center; }
+  .socialmedia-icons i {
+    font-size: 22px;
+    padding: 0 3px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .socialmedia-icons i:hover {
+      color: #FFC132;
+      -webkit-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
 
 /* ---- home page ---- */
 .introduction .introtext {
@@ -106,6 +142,16 @@ main {
 
 .projectpadding {
   margin: 8% 0 0 0; }
+
+.contacticonset {
+  padding: 50% 0 0 10%; }
+
+.contacticon {
+  display: inline; }
+  .contacticon i {
+    /*    color: $yellow-color;*/
+    font-size: 21px;
+    padding: 0 3% 0 0; }
 
 /* skills */
 .skill-set {
@@ -120,6 +166,8 @@ main {
     font-size: 45px; }
   .skill-set p {
     font-weight: 300; }
+  .skill-set a {
+    color: white; }
 
 /* colour on skills section */
 .yellow {
@@ -278,11 +326,26 @@ main {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .display-m {
     display: none; }
-  .mobilenav p {
-    padding-top: 18px; }
-  .mobilenav h3 {
-    padding-top: 25px;
-    font-size: 22pt; }
+  .introtext.contacticonset {
+    padding: 0 0 10% 0; }
+  /*
+.mobilenav {
+  p {
+  padding-top: 18px;
+  }
+  h3 {
+  padding-top: 25px;
+  font-size: 22pt;
+  }
+}*/
+  .overlay-links {
+    padding: 8% 0 0 0; }
+    .overlay-links a {
+      padding: 0 0 50px 0;
+      font-size: 40px;
+      display: block; }
+      .overlay-links a:hover {
+        text-decoration: none; }
   .overlay-content {
     top: 10%; }
   .overlay .closebtn {
@@ -326,24 +389,7 @@ main {
   .red h3, .red p {
     text-align: center; }
   .red p {
-    padding: 0; }
-  .mobilenav {
-    color: black;
-    font-family: "Montserrat", arial, helvetica, sans-serif; }
-    .mobilenav p {
-      margin: 0;
-      padding-top: 35px;
-      float: right;
-      font-size: 25px;
-      cursor: pointer; }
-    .mobilenav h3 {
-      float: left;
-      font-size: 22px;
-      letter-spacing: 1px;
-      margin: 0;
-      text-transform: uppercase;
-      color: #0064AC;
-      padding-top: 35px; } }
+    padding: 0; } }
 
 /* ---- phablet ---- */
 @media only screen and (min-width: 768px) and (max-width: 1365px) {
