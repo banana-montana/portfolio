@@ -53,9 +53,9 @@ main {
   .overlay-links a:hover {
     color: #f1f1f1;
     text-decoration: line-through;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease; }
 
 .mobilenav {
   color: black;
@@ -117,9 +117,16 @@ main {
   left: 0;
   right: 0; }
 
+.socialmedia-icons2 {
+  color: #0064AC; }
+
+.socialmediaset a {
+  font-size: 25px;
+  padding: 0 5% 0 0;
+  color: #0064AC; }
+
 .socialmedia-icons {
   display: inline;
-  color: #0BA094;
   text-align: center; }
   .socialmedia-icons i {
     font-size: 22px;
@@ -128,7 +135,6 @@ main {
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease; }
     .socialmedia-icons i:hover {
-      color: #FFC132;
       -webkit-transition: all 0.6s ease;
       -o-transition: all 0.6s ease;
       transition: all 0.6s ease; }
@@ -149,7 +155,7 @@ main {
 .contacticon {
   display: inline; }
   .contacticon i {
-    /*    color: $yellow-color;*/
+    color: #0064AC;
     font-size: 21px;
     padding: 0 3% 0 0; }
 
@@ -287,6 +293,15 @@ main {
     padding: 44% 0 0 0;
     color: black; }
 
+.mobile-title h3, .mobile-title a {
+  font-weight: 500;
+  font-family: "Montserrat", arial, helvetica, sans-serif;
+  text-align: left;
+  padding: 0 0 5% 0;
+  color: black;
+  -webkit-text-decoration-style: none !important;
+  text-decoration-style: none !important; }
+
 /* project page */
 .filter-menu .arrow {
   font-size: 20px;
@@ -322,8 +337,29 @@ main {
   display: block; }
 
 /* ---- media queries ---- */
+/* override Skeleton CSS for tablet !!!!!!!!!! */
+@media (max-width: 700px) {
+  .overlay-title {
+    display: none; }
+  .mobile-title {
+    display: block; } }
+
+@media (min-width: 551px) and (max-width: 766px) {
+  .overlay-title {
+    display: none; }
+  .mobile-title {
+    display: block; }
+    .mobile-title h3, .mobile-title a {
+      font-size: 20px;
+      text-align: left;
+      padding: 0 0 3% 0; } }
+
 /* ---- mobile ---- */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  .overlay-title {
+    display: none; }
+  .mobile-title {
+    display: block; }
   .display-m {
     display: none; }
   .introtext.contacticonset {
@@ -393,21 +429,42 @@ main {
 
 /* ---- phablet ---- */
 @media only screen and (min-width: 768px) and (max-width: 1365px) {
+  .mobile-title {
+    display: none; }
   .portfolio-entry {
     padding: 0 0 3% 0; }
   .display-d {
-    display: none; } }
+    display: none; }
+  .overlay .closebtn {
+    font-weight: 400;
+    top: 20px;
+    right: 9%;
+    font-size: 60px; } }
 
 /* ---- desktop ---- */
 @media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .mobile-title {
+    display: none; }
   .portfolio-entry {
     padding: 0 0 4% 0; }
   .display-d {
-    display: none; } }
+    display: none; }
+  .overlay .closebtn {
+    font-weight: 400;
+    top: 20px;
+    right: 9%;
+    font-size: 60px; } }
 
 /* ---- large desktop ---- */
 @media only screen and (min-width: 1600px) and (max-width: 1980px) {
+  .mobile-title {
+    display: none; }
   .portfolio-entry {
     padding: 0 0 4% 0; }
   .display-d {
-    display: none; } }
+    display: none; }
+  .overlay .closebtn {
+    font-weight: 400;
+    top: 20px;
+    right: 12%;
+    font-size: 60px; } }

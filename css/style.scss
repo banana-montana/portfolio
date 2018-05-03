@@ -67,7 +67,7 @@ main {
     &:hover {
       color: #f1f1f1;
       text-decoration: line-through;
-      transition: 0.5s;
+      transition: all 0.6s ease;
     }
   }
 }
@@ -138,20 +138,29 @@ main {
     right: 0;
 }
 
-.socialmedia-icons {
+.socialmedia-icons2 {
+  color: $blue-color;
+}
+
+.socialmediaset a {
+  font-size: 25px;
+  padding: 0 5% 0 0;
+  color: $blue-color;
+}
+
+.socialmedia-icons,  {
   display: inline;
-  color: $secondary-color;
   text-align: center;
   i {
     font-size: 22px;
     padding: 0 3px;
     transition: all 0.4s ease;
     &:hover {
-      color: $primary-color;
       transition: all 0.6s ease;
     }
   }
 }
+
 
 
 /* ---- home page ---- */
@@ -176,7 +185,7 @@ main {
 .contacticon {
   display: inline;
   i {
-/*    color: $yellow-color;*/
+    color: $blue-color;
     font-size: 21px;
     padding: 0 3% 0 0;
   }
@@ -339,6 +348,17 @@ main {
   }
 }
 
+.mobile-title {
+ h3, a {
+    font-weight: 500;
+    font-family: $font-main;
+    text-align: left;
+    padding: 0 0 5% 0;
+    color: black;
+    text-decoration-style: none !important;
+  }
+}
+
 /* project page */
 .filter-menu .arrow {
   font-size: 20px;
@@ -388,8 +408,45 @@ main {
 
 
 /* ---- media queries ---- */
+/* override Skeleton CSS for tablet !!!!!!!!!! */
+@media (max-width: 700px) {
+.overlay-title {
+  display: none;
+}
+
+.mobile-title {
+  display: block;
+}
+
+}
+
+@media (min-width: 551px) and (max-width:766px) {
+.overlay-title {
+  display: none;
+}
+
+.mobile-title {
+  display: block;
+ h3, a {
+    font-size: 20px;
+    text-align: left;
+    padding: 0 0 3% 0;
+  }
+}
+
+
+}
+
 /* ---- mobile ---- */
 @media only screen and (min-width:320px) and (max-width:767px) {
+.overlay-title {
+  display: none;
+}
+
+.mobile-title {
+  display: block;
+}
+
 .display-m {
   display: none;
 }
@@ -501,6 +558,10 @@ main {
 
 /* ---- phablet ---- */
 @media only screen and (min-width:768px) and (max-width:1365px) {
+.mobile-title {
+  display: none;
+}
+
   .portfolio-entry {
     padding: 0 0 3% 0;
   }
@@ -508,10 +569,21 @@ main {
   .display-d {
     display: none;
   }
+
+.overlay .closebtn {
+  font-weight: 400;
+  top: 20px;
+  right: 9%;
+  font-size: 60px;
+}
+
 }
 
 /* ---- desktop ---- */
 @media only screen and (min-width:1366px) and (max-width:1599px) {
+.mobile-title {
+  display: none;
+}
   .portfolio-entry {
     padding: 0 0 4% 0;
   }
@@ -519,10 +591,21 @@ main {
   .display-d {
     display: none;
   }
+
+.overlay .closebtn {
+  font-weight: 400;
+  top: 20px;
+  right: 9%;
+  font-size: 60px;
+}
+
 }
 
 /* ---- large desktop ---- */
 @media only screen and (min-width:1600px) and (max-width:1980px) {
+.mobile-title {
+  display: none;
+}
   .portfolio-entry {
     padding: 0 0 4% 0;
   }
@@ -530,6 +613,14 @@ main {
   .display-d {
     display: none;
   }
+
+.overlay .closebtn {
+  font-weight: 400;
+  top: 20px;
+  right: 12%;
+  font-size: 60px;
+}
+
 }
 
 
