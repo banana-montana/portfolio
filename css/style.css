@@ -364,16 +364,12 @@ main {
     display: none; }
   .introtext.contacticonset {
     padding: 0 0 10% 0; }
-  /*
-.mobilenav {
-  p {
-  padding-top: 18px;
-  }
-  h3 {
-  padding-top: 25px;
-  font-size: 22pt;
-  }
-}*/
+  .mobilenav p {
+    padding-top: 16px;
+    font-size: 28px; }
+  .mobilenav h3 {
+    padding-top: 25px;
+    font-size: 18pt; }
   .overlay-links {
     padding: 8% 0 0 0; }
     .overlay-links a {
