@@ -30,9 +30,19 @@ $(document).on('click', '#myNav a', function (event) {
 });
 
 $(document).ready(function(){
-    $('.category-button').click(function(event){
-        var category = $(this).attr('data-toggle');
+    switch(location.hash) {
+        case "#web":
+            selectCategoty("web");
+            break;
+        case "#print":
+            selectCategoty("print");
+            break;
+        case "#branding":
+            selectCategoty("branding");
+            break;
+    }
 
+    function selectCategoty(category) {
         $('.portfolio-entry').addClass('hide');
         $('.portfolio-entry').removeClass('show');
         $('.portfolio-entry.' + category).addClass('show');
@@ -42,5 +52,11 @@ $(document).ready(function(){
         $('.filter-menu').addClass('category-active-' + category);
 
         $(".filter-menu").css("transition","0.5s");
+    }
+
+    $('.category-button').click(function(event){
+        var category = $(this).attr('data-toggle');
+
+        selectCategoty(category);
     })
 })
