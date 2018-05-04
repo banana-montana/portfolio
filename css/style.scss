@@ -194,7 +194,6 @@ main {
   }
 }
 
-
 /* skills */
 .skill-set {
   font-family: $font-main;
@@ -216,6 +215,12 @@ main {
   }
 }
 
+.skillsetblock {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 /* colour on skills section */
 .yellow {
   background-color: $yellow-color;
@@ -227,11 +232,11 @@ main {
   }
 }
 .blue {
+  background-color: $blue-color;
   img {
     padding: 0 10% 8% 10%;
     width: 120%;
   }
-  background-color: $blue-color;
   p {
     padding: 0 15% 0 0;
   }
@@ -285,6 +290,7 @@ main {
 .filter-menu {
   padding: 0 0 7% 0;
   background-color: $yellow-color;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 6px 0 rgba(0, 0, 0, 0.15);
   .button {
     font-family: $font-main;
     display: inline-block;
@@ -427,21 +433,7 @@ main {
 
 }
 
-@media (min-width: 551px) and (max-width:766px) {
-.overlay-title {
-  display: none;
-}
 
-.mobile-title {
-  display: block;
- h3, a {
-    font-size: 20px;
-    text-align: left;
-    padding: 0 0 3% 0;
-  }
-}
-
-}
 
 @media only screen and (max-width:550px) {
 .introtext.contacticonset {
@@ -565,9 +557,34 @@ main {
   }
 }
 
-
 }
 
+@media (min-width: 551px) and (max-width:766px) {
+.overlay-title {
+  display: none;
+}
+
+.mobile-title {
+  display: block;
+ h3, a {
+    font-size: 20px;
+    text-align: left;
+    padding: 0 0 3% 0;
+  }
+}
+
+.skill-set {
+  h3 {
+    padding: 5% 0 0 0;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  p {
+    font-weight: 300;
+  }
+}
+
+}
 
 
 @media only screen and (min-width:550px) and (max-width:767px) {
@@ -598,6 +615,14 @@ main {
   top: 20px;
   right: 9%;
   font-size: 60px;
+}
+
+/* skill set */
+.skill-set {
+  h3 {
+    padding: 0;
+    font-size: 35px;
+  }
 }
 
 }

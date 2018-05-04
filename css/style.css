@@ -175,6 +175,17 @@ main {
   .skill-set a {
     color: white; }
 
+.skillsetblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 /* colour on skills section */
 .yellow {
   background-color: #F9B730; }
@@ -228,7 +239,9 @@ main {
 
 .filter-menu {
   padding: 0 0 7% 0;
-  background-color: #F9B730; }
+  background-color: #F9B730;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 6px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 6px 0 rgba(0, 0, 0, 0.15); }
   .filter-menu .button {
     font-family: "Montserrat", arial, helvetica, sans-serif;
     display: inline-block;
@@ -350,16 +363,6 @@ main {
   .mobile-title {
     display: block; } }
 
-@media (min-width: 551px) and (max-width: 766px) {
-  .overlay-title {
-    display: none; }
-  .mobile-title {
-    display: block; }
-    .mobile-title h3, .mobile-title a {
-      font-size: 20px;
-      text-align: left;
-      padding: 0 0 3% 0; } }
-
 @media only screen and (max-width: 550px) {
   .introtext.contacticonset {
     padding: 0 0 10% 0; } }
@@ -431,6 +434,22 @@ main {
   .red p {
     padding: 0; } }
 
+@media (min-width: 551px) and (max-width: 766px) {
+  .overlay-title {
+    display: none; }
+  .mobile-title {
+    display: block; }
+    .mobile-title h3, .mobile-title a {
+      font-size: 20px;
+      text-align: left;
+      padding: 0 0 3% 0; }
+  .skill-set h3 {
+    padding: 5% 0 0 0;
+    font-weight: 500;
+    font-size: 30px; }
+  .skill-set p {
+    font-weight: 300; } }
+
 @media only screen and (min-width: 550px) and (max-width: 767px) {
   .display-d {
     display: none; }
@@ -449,7 +468,11 @@ main {
     font-weight: 400;
     top: 20px;
     right: 9%;
-    font-size: 60px; } }
+    font-size: 60px; }
+  /* skill set */
+  .skill-set h3 {
+    padding: 0;
+    font-size: 35px; } }
 
 /* ---- desktop ---- */
 @media only screen and (min-width: 1366px) and (max-width: 1599px) {
